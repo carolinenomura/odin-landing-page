@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito&family=Open+Sans&display=swap");
+
+:root {
+  --primary-color: #f5ece3;
+  --content-width: 1000px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Gabarito", Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header .logo {
+  height: 30px;
+  margin: 15px 50px 15px 0;
+  cursor: pointer;
+}
+
+header .nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #fff;
+  height: 60px;
+  width: var(--content-width);
+  line-height: 60px;
+  margin: auto;
+}
+
+header .nav-bar .search-box {
+  display: inline;
+}
+
+header .nav-bar ul {
+  display: flex;
+  align-items: stretch;
+  justify-content: right;
+  width: 100%;
+}
+
+header .nav-bar li {
+  display: inline;
+  margin-left: 40px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+header .nav-bar .search-box {
+  position: relative;
+}
+
+header .nav-bar .search-box input {
+  border: none;
+  border-radius: 10rem;
+  width: 280px;
+  height: 36px;
+  background-color: #f1f1f1;
+  outline: none;
+  text-indent: 40px;
+  font-size: 17px;
+}
+
+header .nav-bar .search-box i {
+  position: absolute;
+  top: 3px;
+  left: 12px;
+  color: #bfbfbf;
+}
+
+header .nav-bar .btn {
+  display: inline-block;
+  background: var(--primary-color);
+  width: 120px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 10rem;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  background: #fff;
+  height: calc(100vh - 60px);
+}
+
+.hero img {
+  max-width: 600px;
+}
+
+.hero .hero-content {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: calc(50% - 60px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 60px;
+}
+
+.hero .hero-content .left-row {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.hero .hero-content h1 {
+  font-size: 50px;
+  width: 340px;
+}
+
+.hero .hero-content .btn {
+  display: inline-block;
+  background: var(--primary-color);
+  width: 180px;
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  border-radius: 10rem;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #3a3a3a;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* POPULAR BOOKS SECTION */
+.popular-books {
+  max-width: var(--content-width);
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  display: inline-block;
+  font-size: 1.2rem;
+  text-decoration: underline 2px #dedede;
+  text-underline-offset: 8px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.popular-books .book-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.book {
+  position: relative;
+  width: 120px;
+  height: 180px;
+  flex-shrink: 0;
+}
+
+.book-small {
+  position: relative;
+  width: 78px;
+  height: 115px;
+  flex-shrink: 0;
+}
+
+.book-miniature {
+  position: relative;
+  width: 74px;
+  height: 110px;
+  flex-shrink: 0;
+  background: #d9d9d9;
+}
+
+.cover-img {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.popular-books .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-shadow: 1px 1px 10px rgba(82, 82, 92, 0.2);
+  cursor: pointer;
+}
+
+.popular-books .fa-chevron-left {
+  left: 3%;
+}
+
+.popular-books .fa-chevron-right {
+  left: 97%;
+}
+
+.popular-books hr {
+  background-color: #dedede;
+  border: 0px;
+  height: 2px;
+  width: 100%;
+  text-align: center;
+  margin: 30px auto;
+}
+
+/* 2 COLUMN */
+.two-column {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  max-width: var(--content-width);
+  margin: auto;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+/* POPULAR REVIEWS SECTION */
+.popular-reviews {
+  width: 680px;
+}
+
+.popular-reviews .review {
+  position: relative;
+}
+
+.popular-reviews .user-photo img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 16px;
+  float: left;
+}
+
+.popular-reviews .review .user-name {
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.popular-reviews .review .rating {
+  display: inline-block;
+  color: #f9c94e;
+  font-size: 18px;
+}
+
+.popular-reviews .review .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #797979;
+  line-height: 18px;
+}
+
+.popular-reviews .review .review-text {
+  margin-left: 66px;
+  line-height: 22px;
+}
+
+.popular-reviews .review .review-text a {
+  color: #be904b;
+}
+
+.popular-reviews .review-box {
+  position: relative;
+  border: 1.5px solid #dedede;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px 0 10px 66px;
+}
+
+.popular-reviews .review-box .two-column {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.popular-reviews .review-box .book-small img {
+  border-radius: 0 10px 10px 0;
+}
+
+.popular-reviews .review-box .details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.popular-reviews .review-box .details .book-title {
+  font-size: 1.1rem;
+  margin-bottom: 2px;
+}
+
+.popular-reviews .review-box .details .book-author {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.popular-reviews .review-box .details .book-summary {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  line-height: 20px;
+}
+
+.popular-reviews .review .review-feedback {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  margin-left: 66px;
+}
+
+.popular-reviews hr {
+  background-color: #dedede;
+  border: 0px;
+  height: 2px;
+  margin: 20px 0 26px 66px;
+}
+
+/* POPULAR LISTS SECTION */
+.popular-lists {
+  width: 250px;
+}
+
+.popular-lists .list {
+  margin-bottom: 20px;
+}
+
+.popular-lists .list .list-card {
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.book-middle {
+  margin: 1.4rem 0;
+}
+
+.book-left {
+  border-radius: 0 0 0 10px;
+  margin-top: 2.8rem;
+}
+
+.book-right {
+  border-radius: 0 10px 0 0;
+  margin-bottom: 2.8rem;
+}
+
+.book-left .cover-img {
+  border-radius: 0 0 0 10px;
+}
+
+.book-right .cover-img {
+  border-radius: 0 10px 0 0;
+}
+
+.list-name {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.list-info {
+  margin-top: 1px;
+}
